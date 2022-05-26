@@ -25,4 +25,4 @@ jobs:
         run: dotnet paket restore
 
       - name: Build
-        run: dotnet build ${{ format('{1}', env.SOLUTION_FILENAME) }} --no-restore --configuration Release
+        run: dotnet build ${{ format('{0}', env.SOLUTION_FILENAME) }} --no-restore --configuration Release
